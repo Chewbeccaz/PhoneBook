@@ -51,6 +51,7 @@ function updateList() {
     Setting the value by using the users input. */
 
     myContacts.forEach(function(contact) {
+        let contactLi = document.createElement('li');
         let contactDiv = document.createElement('div');
         
         let nameInput = document.createElement('input');
@@ -77,7 +78,8 @@ function updateList() {
         
         // Append the input elements into div and then append the div into UL.
         contactDiv.append(nameInput, phoneInput, changeBtn, deleteBtn);
-        contactUl.appendChild(contactDiv);
+        contactLi.append(contactDiv);
+        contactUl.appendChild(contactLi);
     });
 }
 
