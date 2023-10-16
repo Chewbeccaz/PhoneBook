@@ -73,7 +73,7 @@ function updateList() {
         let deleteBtn = document.createElement('button');
         deleteBtn.innerText='Radera';
         deleteBtn.addEventListener('click', function(e){
-            deleteContact(contactDiv);
+            deleteContact(contactLi);
         });
         
         // Append the input elements into div and then append the div into UL.
@@ -113,8 +113,8 @@ function change(changeButton, nameInput, phoneInput){
      }*/
 }
 
-function deleteContact(contactDiv){
-    contactDiv.parentElement.removeChild(contactDiv);
+function deleteContact(contactLi){
+    contactLi.parentElement.removeChild(contactLi);
 }
 
 function isValid(saveName, savePhone){
