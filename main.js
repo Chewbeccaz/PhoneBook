@@ -101,8 +101,7 @@ function change(changeButton, nameInput, phoneInput){
     nameInput.disabled=!isEdit;
     phoneInput.disabled=!isEdit; 
     //Ternary Operator
-    changeButton.innerText = isEdit ? 'Spara' : 'Ändra'; 
-        
+    changeButton.innerText = isEdit ? 'Spara' : 'Ändra';   
 
     /*
      if (isEdit){
