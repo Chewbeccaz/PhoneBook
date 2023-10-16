@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Philosopher&family=Poppins:wght@300&display=swap');
+
+/* Hidden by default. */
+#error-msg {
+    color: red;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: none; 
+  }
+
+  #deleteAllBtn{
+    display: none;
+  }
+
+  /*ÖVRIG STYLING UTÖVER*/
+
+  body{
+    background-image: url(/img/höst.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  /* #wrapper {
+    background-color: rgb(178, 179, 171);
+    min-height: 600px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.3);
+  } */
+
+  #wrapper{
+    width: 75%;
+    min-height: 600px; 
+    margin: 40px auto; 
+    border: 2px solid #ffffff75;
+    /* border-left: 2px solid #ffffff75;  */
+    box-shadow: 5px 5px 12px 00000035;
+    background: #ffffff25;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+  }
+
+  h1 {
+    text-align:center;
+  }
+  h2 {
+    margin-left: 40px; 
+    margin-top:50px;
+  }
+
+  #createBtn, #deleteAllBtn{
+    width: 150px; 
+    margin-right: 8px; 
+  }
+  #phone-input, #name-input{
+    width: 200px;
+    margin-right: 8px;
+    padding: 2px; 
+    margin-top: 10px; 
+  }
+  #name-input{
+  margin-left: 40px;
+  
+  }
+
+  input {
+    width: 200px;
+    height: 20px; 
+    margin-right: 12px; 
+    padding: 2px; 
+    border: solid 1.5px #676161;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.3);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  button {
+    width: 100px;
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-right: 8px;
+    border-radius: 15px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+
+button:hover {
+  color: #fff;
+  background-color: #313030;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.945); 
+  scale: 1.1;
+ }
+
+ 
