@@ -8,33 +8,17 @@
     margin-left: 40px;
     display: none; 
   }
-
   #deleteAllBtn{
     display: none;
   }
 
   /*ÖVRIG STYLING UTÖVER*/
-
   body{
     background-image: url(/img/höst.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Bebas Neue', sans-serif;
   }
-
-  /* #wrapper {
-    background-color: rgb(178, 179, 171);
-    min-height: 600px;
-    width: 1000px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.3);
-  } */
-
   #wrapper{
     width: 75%;
     min-height: 600px; 
@@ -47,7 +31,6 @@
     overflow: hidden;
     backdrop-filter: blur(4px);
   }
-
   h1 {
     text-align:center;
     letter-spacing: 1px;
@@ -57,7 +40,6 @@
     margin-top:50px;
     letter-spacing: 1px;
   }
-
   #createBtn, #deleteAllBtn{
     width: 150px; 
     margin-right: 8px; 
@@ -70,9 +52,7 @@
   }
   #name-input{
   margin-left: 40px;
-  
   }
-
   input {
     width: 200px;
     height: 20px; 
@@ -82,8 +62,8 @@
     border-radius: 5px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.3);
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
   }
-
   button {
     width: 100px;
     margin: 0 auto; 
@@ -96,8 +76,8 @@
     box-sizing: border-box;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
   }
-
 button:hover {
   color: #fff;
   background-color: #313030;
@@ -113,20 +93,18 @@ button:hover {
   align-items: center;
   width: 80%;
  }
-
  #createBtn, #deleteAllBtn, #name-input, #phone-input{
  margin: 10px auto;
+ width:25%;
 }
-
 button{
   margin-left:0;
   width: 15%;
-  font-size: 0.75em;
 }
 input{
   width:30%;
+  font-size: 0.75em;
 }
-
 ul {
   width: 80%;
 }
@@ -137,14 +115,13 @@ ul {
   #wrapper{
     width: 90%;
   }
-  
   input{
     width:20%;
     margin: 10px auto; 
     margin-right: 4px;
   }
   button {
-   width: 20%;
+   width: 15%;
   font-size: 10px;
   }
 }
