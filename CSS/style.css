@@ -50,10 +50,12 @@
 
   h1 {
     text-align:center;
+    letter-spacing: 1px;
   }
   h2 {
     margin-left: 40px; 
     margin-top:50px;
+    letter-spacing: 1px;
   }
 
   #createBtn, #deleteAllBtn{
