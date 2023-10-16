@@ -85,6 +85,13 @@ button:hover {
   scale: 1.1;
  }
 
+ /*Animation for input*/
+.animated-input:focus::placeholder {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+
  /* Media Query for Small Screens */
 @media (max-width: 1075px) {
  #wrapper {
