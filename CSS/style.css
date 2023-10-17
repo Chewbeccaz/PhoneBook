@@ -14,9 +14,9 @@
 
   /*ÖVRIG STYLING UTÖVER*/
   body{
-    background-image: url(/img/höst.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/höst.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     font-family: 'Bebas Neue', sans-serif;
   }
   #wrapper{
