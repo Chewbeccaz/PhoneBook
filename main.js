@@ -1,10 +1,10 @@
 //Create my array and variables needed. 
-let myContacts = [];
-let nameInput = document.getElementById('name-input');
-let phoneInput = document.getElementById('phone-input');
-let createBtn = document.getElementById('createBtn');
-let validationMsg = document.getElementById('error-msg');
-let deleteAllBtn = document.getElementById('deleteAllBtn');
+let myContacts = [],
+nameInput = document.getElementById('name-input'),
+phoneInput = document.getElementById('phone-input'),
+createBtn = document.getElementById('createBtn'),
+validationMsg = document.getElementById('error-msg'),
+deleteAllBtn = document.getElementById('deleteAllBtn');
 
 document.getElementById('createBtn').addEventListener('click', function(e){
     //Add values from input into new variables
