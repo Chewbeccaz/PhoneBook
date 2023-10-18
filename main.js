@@ -19,6 +19,12 @@ document.getElementById('createBtn').addEventListener('click', function(e){
         };
         myContacts.push(newContact);
 
+        /*Sorting the array in alphabetical order by using 
+        Sort and localeCompare-method to compare strings. */
+        myContacts.sort((a, b) => {
+            return a.name.localeCompare(b.name);
+        })
+
         //calling the function updateList() & clear input.
         updateList();
         nameInput.value ="";
