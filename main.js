@@ -11,17 +11,16 @@ document.getElementById('createBtn').addEventListener('click', function(e){
     let saveName = nameInput.value;
     let savePhone =phoneInput.value;
 
-    //if true, add the new object into the array. 
+    //if valid returns true, add the new contact-object into the array. 
     if (isValid(saveName, savePhone)){
         let newContact = {
-            name: saveName,
-            phone: savePhone
+            name: saveName, //Property
+            phone: savePhone //Property
         };
         myContacts.push(newContact);
 
         //calling the function updateList() & clear input.
         updateList();
-        //Kan det läggas in i updateList()?
         nameInput.value ="";
         phoneInput.value ="";
         // make shure that the errormsg is hidden.  
@@ -48,7 +47,7 @@ function updateList() {
     contactUl.innerHTML = ""; //Clears the contactUl-element to prevent it from dublicating. 
 
     /* Loops through the array and creating a div with inputs for every index.
-    Setting the value by using the users input. */
+    Setting the value by using the users input. This will be added to the li-element */
 
     myContacts.forEach(function(contact) {
         let contactLi = document.createElement('li');
@@ -78,7 +77,7 @@ function updateList() {
         
         // Append the input elements into div and then append the div into UL.
         contactDiv.append(nameInput, phoneInput, changeBtn, deleteBtn);
-        contactLi.append(contactDiv);
+        contactLi.appendChild(contactDiv);
         contactUl.appendChild(contactLi);
     });
 }
@@ -96,11 +95,10 @@ function change(changeButton, nameInput, phoneInput){
         return; //Makes sure that we can't keep editing. 
     }
 }
-
     //Toggle the bool-statement. 
     nameInput.disabled=!isEdit;
     phoneInput.disabled=!isEdit; 
-    //Ternary Operator
+    //Ternary Operator to clean up the code. 
     changeButton.innerText = isEdit ? 'Spara' : 'Ändra';   
 
     /*
