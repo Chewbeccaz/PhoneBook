@@ -40,7 +40,7 @@ document.getElementById('createBtn').addEventListener('click', function(e){
     deleteAllBtn.style.display='inline';
 });
 //calling deleteAll if button is triggered()
-document.getElementById('deleteAllBtn').addEventListener('click', function(e){
+document.getElementById('deleteAllBtn').addEventListener('click', (e) => {
     deleteAll();
 });
 
@@ -72,12 +72,12 @@ function updateList() {
         /****************** Adding change/delete buttons **************/
         let changeBtn = document.createElement('button');
         changeBtn.innerText='Ändra';
-        changeBtn.addEventListener('click', function(e){
+        changeBtn.addEventListener('click', (e) => {
             change(changeBtn, nameInput, phoneInput);
         })
         let deleteBtn = document.createElement('button');
         deleteBtn.innerText='Radera';
-        deleteBtn.addEventListener('click', function(e){
+        deleteBtn.addEventListener('click', (e) => {
             deleteContact(contactLi);
         });
         
