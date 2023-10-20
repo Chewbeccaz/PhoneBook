@@ -10,6 +10,9 @@
   #deleteAllBtn{
     display: none; /* hidden by default. */
   }
+  #deleteAllBtn:hover {
+    background-color: rgba(255, 51, 0, 0.89);
+  }
 
   /*ÖVRIG STYLING*/
   body{
