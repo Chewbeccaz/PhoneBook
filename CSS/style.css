@@ -90,6 +90,10 @@ button:hover {
   transition: all 0.4s ease;
 }
 
+ul{
+  list-style-type: none;
+}
+
  /* Media Query for Small Screens */
 @media (max-width: 1075px) {
  #wrapper {
